@@ -125652,22 +125652,6 @@
       "bershanskiy"
     ]
   },
-  "Web/HTTP/Headers/Feature-Policy/vibrate": {
-    "modified": "2020-10-15T22:20:16.873Z",
-    "contributors": [
-      "bershanskiy",
-      "Malvoz"
-    ]
-  },
-  "Web/HTTP/Headers/Feature-Policy/vr": {
-    "modified": "2020-10-15T22:10:31.295Z",
-    "contributors": [
-      "mfuji09",
-      "bershanskiy",
-      "Malvoz",
-      "fscholz"
-    ]
-  },
   "Web/HTTP/Headers/Feature-Policy/web-share": {
     "modified": "2020-12-10T15:06:45.009Z",
     "contributors": [
@@ -125675,13 +125659,6 @@
       "chrisdavidmills",
       "hamishwillee",
       "ericwilligers"
-    ]
-  },
-  "Web/HTTP/Headers/Feature-Policy/xr": {
-    "modified": "2020-01-10T06:23:40.396Z",
-    "contributors": [
-      "Malvoz",
-      "bershanskiy"
     ]
   },
   "Web/HTTP/Headers/Feature-Policy/xr-spatial-tracking": {
