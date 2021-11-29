@@ -19974,15 +19974,6 @@
       "jonathanKingston"
     ]
   },
-  "Mozilla/Add-ons/WebExtensions/Debugging_(before_Firefox_50)": {
-    "modified": "2020-06-22T16:29:13.200Z",
-    "contributors": [
-      "ExE-Boss",
-      "hellosct1",
-      "andrewtruongmoz",
-      "wbamberg"
-    ]
-  },
   "Mozilla/Add-ons/WebExtensions/Developing_WebExtensions_for_Thunderbird": {
     "modified": "2020-06-22T16:29:34.380Z",
     "contributors": [
@@ -100607,17 +100598,6 @@
       "EvanGenest"
     ]
   },
-  "Web/CSS/CSS_Scroll_Snap/Browser_compat": {
-    "modified": "2020-04-27T22:30:58.422Z",
-    "contributors": [
-      "Sheppy",
-      "mfuji09",
-      "chrisdavidmills",
-      "rachelandrew",
-      "matt.titchener",
-      "jensenmeh"
-    ]
-  },
   "Web/CSS/CSS_Scroll_Snap_Points": {
     "modified": "2020-07-07T12:26:12.735Z",
     "contributors": [
@@ -115797,12 +115777,6 @@
     "contributors": [
       "ExE-Boss",
       "Jonathan_Watt"
-    ]
-  },
-  "Web/Guide/Unicode_Bidrectional_Text_Algorithm": {
-    "modified": "2019-03-23T21:59:53.056Z",
-    "contributors": [
-      "Sheppy"
     ]
   },
   "Web/Guide/User_input_methods": {
