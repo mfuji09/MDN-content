@@ -40,7 +40,7 @@
 /en-US/docs/ARIA/ARIA_Techniques/ARIA_Technique_Template	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/ARIA_Technique_Template
 /en-US/docs/ARIA/ARIA_Techniques/Using_the_alert_role	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role
 /en-US/docs/ARIA/ARIA_Techniques/Using_the_alertdialog_role	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alertdialog_role
-/en-US/docs/ARIA/ARIA_Techniques/Using_the_aria-activedescendant_attribute	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-activedescendant_attribute
+/en-US/docs/ARIA/ARIA_Techniques/Using_the_aria-activedescendant_attribute	/en-US/docs/web/Accessibility/ARIA/Attributes/aria-activedescendant
 /en-US/docs/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute
 /en-US/docs/ARIA/ARIA_Techniques/Using_the_banner_role	/en-US/docs/Web/Accessibility/ARIA/Roles/Banner_role
 /en-US/docs/ARIA/ARIA_Techniques/Using_the_button_role	/en-US/docs/Web/Accessibility/ARIA/Roles/button_role
@@ -80,7 +80,7 @@
 /en-US/docs/Accessibility/ARIA/ARIA_Techniques/ARIA_Technique_Template	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/ARIA_Technique_Template
 /en-US/docs/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role
 /en-US/docs/Accessibility/ARIA/ARIA_Techniques/Using_the_alertdialog_role	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alertdialog_role
-/en-US/docs/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-activedescendant_attribute	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-activedescendant_attribute
+/en-US/docs/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-activedescendant_attribute	/en-US/docs/web/Accessibility/ARIA/Attributes/aria-activedescendant
 /en-US/docs/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute
 /en-US/docs/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute
 /en-US/docs/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_property	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute
@@ -7216,6 +7216,9 @@
 /en-US/docs/Web/API/DeviceRotationRate/gamma	/en-US/docs/Web/API/DeviceMotionEventRotationRate/gamma
 /en-US/docs/Web/API/DirectoryEntry	/en-US/docs/Web/API/FileSystemDirectoryEntry
 /en-US/docs/Web/API/DirectoryReader	/en-US/docs/Web/API/FileSystemDirectoryReader
+/en-US/docs/Web/API/DisplayMediaStreamConstraints	/en-US/docs/Web/API/MediaDevices/getDisplayMedia
+/en-US/docs/Web/API/DisplayMediaStreamConstraints/audio	/en-US/docs/Web/API/MediaDevices/getDisplayMedia
+/en-US/docs/Web/API/DisplayMediaStreamConstraints/video	/en-US/docs/Web/API/MediaDevices/getDisplayMedia
 /en-US/docs/Web/API/Document.createNodeIterator	/en-US/docs/Web/API/Document/createNodeIterator
 /en-US/docs/Web/API/Document.dir	/en-US/docs/Web/API/Document/dir
 /en-US/docs/Web/API/Document.domConfig	/en-US/docs/Web/API/Document
@@ -7443,8 +7446,9 @@
 /en-US/docs/Web/API/FileRequest.onprogress	/en-US/docs/Web/API/FileRequest/onprogress
 /en-US/docs/Web/API/FileSystemFileEntry/FileSystemFileEntry.createWriter	/en-US/docs/Web/API/FileSystemFileEntry/createWriter
 /en-US/docs/Web/API/FileSystemFileEntry/FileSystemFileEntry.createWriter()	/en-US/docs/Web/API/FileSystemFileEntry/createWriter
-/en-US/docs/Web/API/FileSystemFlags/create	/en-US/docs/Web/API/FileSystemFlags
-/en-US/docs/Web/API/FileSystemFlags/exclusive	/en-US/docs/Web/API/FileSystemFlags
+/en-US/docs/Web/API/FileSystemFlags	/en-US/docs/Web/API/FileSystemDirectoryEntry/getFile
+/en-US/docs/Web/API/FileSystemFlags/create	/en-US/docs/Web/API/FileSystemDirectoryEntry/getFile
+/en-US/docs/Web/API/FileSystemFlags/exclusive	/en-US/docs/Web/API/FileSystemDirectoryEntry/getFile
 /en-US/docs/Web/API/File_System_API	/en-US/docs/Web/API/File_and_Directory_Entries_API
 /en-US/docs/Web/API/File_System_API/Introduction	/en-US/docs/Web/API/File_and_Directory_Entries_API/Introduction
 /en-US/docs/Web/API/Float32Array	/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array
@@ -7970,6 +7974,9 @@
 /en-US/docs/Web/API/MediaStreamAudioDestinationNode.stream	/en-US/docs/Web/API/MediaStreamAudioDestinationNode/stream
 /en-US/docs/Web/API/MediaStreamAudioSourceOptions	/en-US/docs/Web/API/MediaStreamAudioSourceNode/MediaStreamAudioSourceNode
 /en-US/docs/Web/API/MediaStreamAudioSourceOptions/mediaStream	/en-US/docs/Web/API/MediaStreamAudioSourceNode/MediaStreamAudioSourceNode
+/en-US/docs/Web/API/MediaStreamConstraints	/en-US/docs/Web/API/MediaDevices/getUserMedia
+/en-US/docs/Web/API/MediaStreamConstraints/audio	/en-US/docs/Web/API/MediaDevices/getUserMedia
+/en-US/docs/Web/API/MediaStreamConstraints/video	/en-US/docs/Web/API/MediaDevices/getUserMedia
 /en-US/docs/Web/API/MediaStreamEvent.MediaStreamEvent	/en-US/docs/Web/API/MediaStreamEvent/MediaStreamEvent
 /en-US/docs/Web/API/MediaStreamEvent.stream	/en-US/docs/Web/API/MediaStreamEvent/stream
 /en-US/docs/Web/API/MediaStreamTrack.enabled	/en-US/docs/Web/API/MediaStreamTrack/enabled
@@ -8806,6 +8813,7 @@
 /en-US/docs/Web/API/VideoTrackList/TextTrackList:_change_event	/en-US/docs/Web/API/TextTrackList/change_event
 /en-US/docs/Web/API/VideoTrackList/getTrackById()	/en-US/docs/Web/API/TextTrackList/getTrackById
 /en-US/docs/Web/API/WEBGL_compressed_texture_es3	/en-US/docs/Web/API/WEBGL_compressed_texture_etc
+/en-US/docs/Web/API/WakeLockSentinel/onrelease	/en-US/docs/Web/API/WakeLockSentinel/release_event
 /en-US/docs/Web/API/WaveShaperNode.curve	/en-US/docs/Web/API/WaveShaperNode/curve
 /en-US/docs/Web/API/WaveShaperNode.oversample	/en-US/docs/Web/API/WaveShaperNode/oversample
 /en-US/docs/Web/API/WebGL2RenderingContext/clearBufferfi	/en-US/docs/Web/API/WebGL2RenderingContext/clearBuffer
@@ -9105,6 +9113,15 @@
 /en-US/docs/Web/API/XRReferenceSpaceType	/en-US/docs/Web/API/XRSession/requestReferenceSpace
 /en-US/docs/Web/API/XRRenderState/XRRenderState.inlineVerticalFieldOfView	/en-US/docs/Web/API/XRRenderState/inlineVerticalFieldOfView
 /en-US/docs/Web/API/XRRenderStateInit	/en-US/docs/Web/API/XRSession/updateRenderState
+/en-US/docs/Web/API/XRSession/onend	/en-US/docs/Web/API/XRSession/end_event
+/en-US/docs/Web/API/XRSession/oninputsourceschange	/en-US/docs/Web/API/XRSession/inputsourceschange_event
+/en-US/docs/Web/API/XRSession/onselect	/en-US/docs/Web/API/XRSession/select_event
+/en-US/docs/Web/API/XRSession/onselectend	/en-US/docs/Web/API/XRSession/selectend_event
+/en-US/docs/Web/API/XRSession/onselectstart	/en-US/docs/Web/API/XRSession/selectstart_event
+/en-US/docs/Web/API/XRSession/onsqueeze	/en-US/docs/Web/API/XRSession/squeeze_event
+/en-US/docs/Web/API/XRSession/onsqueezeend	/en-US/docs/Web/API/XRSession/squeezeend_event
+/en-US/docs/Web/API/XRSession/onsqueezestart	/en-US/docs/Web/API/XRSession/squeezestart_event
+/en-US/docs/Web/API/XRSession/onvisibilitychange	/en-US/docs/Web/API/XRSession/visibilitychange_event
 /en-US/docs/Web/API/XRSessionEventInit	/en-US/docs/Web/API/XRSessionEvent/XRSessionEvent
 /en-US/docs/Web/API/XRSessionEventInit/session	/en-US/docs/Web/API/XRSessionEvent/XRSessionEvent
 /en-US/docs/Web/API/XRSessionInit	/en-US/docs/Web/API/XRSystem/requestSession
@@ -9645,6 +9662,7 @@
 /en-US/docs/Web/APIr	/en-US/docs/Web/API/Document/dir
 /en-US/docs/Web/Accessibility/ARIA/ARIA_Examples	/en-US/docs/Web/Accessibility/ARIA/ARIA_Test_Cases
 /en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Complementary_role	/en-US/docs/Web/Accessibility/ARIA/Roles/Complementary_role
+/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-activedescendant_attribute	/en-US/docs/web/Accessibility/ARIA/Attributes/aria-activedescendant
 /en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_property	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute
 /en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-required_property	/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-required_attribute
 /en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_banner_role	/en-US/docs/Web/Accessibility/ARIA/Roles/Banner_role

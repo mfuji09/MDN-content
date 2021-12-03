@@ -1359,7 +1359,7 @@ The addition of a constructor to the {{domxref("CSSStyleSheet")}} interface as w
 ### WebShare API
 
 The [Web Share API](/en-US/docs/Web/API/Web_Share_API) allows sharing of files, URLs and other data from a site.
-Note that Firefox implements {{domxref("Navigator.share()")}} but not {{domxref("Navigator.canShare()")}} ({{bug(1666203)}}).
+This feature is enabled on Android in all builds, but behind a preference on Desktop (unless specified below).
 
 <table>
   <thead>
@@ -1388,7 +1388,7 @@ Note that Firefox implements {{domxref("Navigator.share()")}} but not {{domxref(
     <tr>
       <th>Release</th>
       <td>71</td>
-      <td>No</td>
+      <td>No (Desktop). Yes (Android).</td>
     </tr>
     <tr>
       <th>Preference name</th>
