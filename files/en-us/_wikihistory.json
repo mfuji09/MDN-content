@@ -80564,22 +80564,22 @@
       "jpmedley"
     ]
   },
-  "Web/API/USB/getDevices": {
-    "modified": "2020-10-15T22:05:24.187Z",
-    "contributors": [
-      "bershanskiy",
-      "jpmedley"
-    ]
-  },
-  "Web/API/USB/onconnect": {
+  "Web/API/USB/connect_event": {
     "modified": "2020-10-15T22:05:25.398Z",
     "contributors": [
       "bershanskiy",
       "jpmedley"
     ]
   },
-  "Web/API/USB/ondisconnect": {
+  "Web/API/USB/disconnect_event": {
     "modified": "2020-10-15T22:05:24.325Z",
+    "contributors": [
+      "bershanskiy",
+      "jpmedley"
+    ]
+  },
+  "Web/API/USB/getDevices": {
+    "modified": "2020-10-15T22:05:24.187Z",
     "contributors": [
       "bershanskiy",
       "jpmedley"
@@ -81911,22 +81911,6 @@
     "modified": "2020-10-15T21:57:56.113Z",
     "contributors": [
       "sideshowbarker",
-      "chrisdavidmills",
-      "connorshea",
-      "jpmedley"
-    ]
-  },
-  "Web/API/VisualViewport/onresize": {
-    "modified": "2020-10-15T21:57:56.691Z",
-    "contributors": [
-      "chrisdavidmills",
-      "connorshea",
-      "jpmedley"
-    ]
-  },
-  "Web/API/VisualViewport/onscroll": {
-    "modified": "2020-10-15T21:57:56.840Z",
-    "contributors": [
       "chrisdavidmills",
       "connorshea",
       "jpmedley"
