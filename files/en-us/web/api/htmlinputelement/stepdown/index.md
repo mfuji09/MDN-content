@@ -116,14 +116,14 @@ element.stepDown( [ stepDecrement ] );
 
   - : The optional  `stepDecrement` parameter is a numeric value.  If no parameter is passed, _stepDecrement_ defaults to 1.
 
-    If the value is a float, the value will decrease as if
+    If the value is a float, the value will decrement as if
     [`Math.floor(stepDecrement)`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
     was passed. If the value is negative, the value will be increased instead of
     decreased.
 
 ## Example
 
-Click the button in this example to decrease the {{HTMLElement("input/number",
+Click the button in this example to decrement the {{HTMLElement("input/number",
   "number")}} input type:
 
 ### HTML
@@ -135,7 +135,7 @@ Click the button in this example to decrease the {{HTMLElement("input/number",
   </label>
 </p>
 <p>
-  <label>Enter how many values of step you would like to decrease by or leave it blank:
+  <label>Enter how many values of step you would like to decrement by or leave it blank:
    <input type="number" step="1" id="decrementer" min="-2" max="15">
   </label>
 </p>
@@ -155,7 +155,7 @@ function stepondown() {
   let input = document.getElementById('theNumber');
   let val = document.getElementById('decrementer').value;
 
-  if (val) {  /* decrease with a parameter */
+  if (val) {  /* decrement with a parameter */
     input.stepDown(val);
   } else {    /* or without a parameter. Try it with 0, 5, -2, etc. */
     input.stepDown();
@@ -179,7 +179,7 @@ Note if you don't pass a parameter to the `stepDown()` method, it defaults
 to 1. Any other value is a multiplier of the `step` attribute value, which in
 this case is 5. If we pass `4` as the _`stepDecrement`_, the input will `stepDown` by
 `4 * 5`, or `20`. If the parameter is `0`, the number will not be
-decreased. The `stepDown()` method will not allow the input to go out of range, in this
+decremented. The `stepDown()` method will not allow the input to go out of range, in this
 case stopping when it reaches 0 and rounding down and floats that are passed as a
 parameter.
 
