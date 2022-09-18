@@ -21,6 +21,7 @@ tags:
   - keyboard
   - keys
 ---
+
 {{DefaultAPISidebar("UI Events")}}
 
 The tables below list the standard values for the [`KeyboardEvent.key`](/en-US/docs/Web/API/KeyboardEvent/key) property, with an explanation of what the key is typically used for. Corresponding virtual keycodes for common platforms are included where available.
@@ -1112,7 +1113,7 @@ Keys used when using an Input Method Editor (IME) to input text which can't read
 
 Some keys are common across multiple languages, while others exist only on keyboards targeting specific languages. In addition, not all keyboards have all of these keys.
 
-#### Common IME keys
+### Common IME keys
 
 <table class="no-markdown">
   <thead>

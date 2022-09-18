@@ -13,6 +13,7 @@ tags:
   - drag and drop
 browser-compat: api.DataTransferItemList.clear
 ---
+
 {{APIRef("HTML Drag and Drop API")}}
 
 The {{domxref("DataTransferItemList")}} method
@@ -25,7 +26,7 @@ in read-only mode, and this method silently does nothing. No exception is thrown
 
 ## Syntax
 
-```js
+```js-nolint
 clear()
 ```
 
@@ -41,17 +42,28 @@ None ({{jsxref("undefined")}}).
 
 This example shows the use of the `clear()` method.
 
-#### HTML
+### HTML
 
 ```html
- <div>
-   <p id="source" ondragstart="dragstartHandler(event);" ondragend="dragendHandler(event);" draggable="true">
-     Select this element, drag it to the Drop Zone and then release the selection to move the element.</p>
- </div>
- <div id="target" ondrop="dropHandler(event);" ondragover="dragoverHandler(event);">Drop Zone</div>
+<div>
+  <p
+    id="source"
+    ondragstart="dragstartHandler(event);"
+    ondragend="dragendHandler(event);"
+    draggable="true">
+    Select this element, drag it to the Drop Zone and then release the selection
+    to move the element.
+  </p>
+</div>
+<div
+  id="target"
+  ondrop="dropHandler(event);"
+  ondragover="dragoverHandler(event);">
+  Drop Zone
+</div>
 ```
 
-#### CSS
+### CSS
 
 ```css
   div {
@@ -67,7 +79,7 @@ This example shows the use of the `clear()` method.
   }
 ```
 
-#### JavaScript
+### JavaScript
 
 ```js
 function dragstartHandler(ev) {
@@ -121,7 +133,7 @@ function dragendHandler(ev) {
 }
 ```
 
-#### Result
+### Result
 
 {{EmbedLiveSample('Examples', 400, 300)}}
 

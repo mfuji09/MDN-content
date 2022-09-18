@@ -17,6 +17,7 @@ tags:
   - Experimental
 browser-compat: api.XRCylinderLayer
 ---
+
 {{securecontext_header}}{{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`XRCylinderLayer`** interface of the [WebXR Device API](/en-US/docs/Web/API/WebXR_Device_API) is a layer that takes up a curved rectangular space in the virtual environment. Only the front of the layer is visible.
@@ -49,7 +50,7 @@ _Inherits properties from its parent, {{domxref("XRCompositionLayer")}}._
 
 ## Methods
 
-*Inherits methods from its parents, {{domxref("XRCompositionLayer")}} and {{domxref("EventTarget")}}*.
+_Inherits methods from its parents, {{domxref("XRCompositionLayer")}} and {{domxref("EventTarget")}}_.
 
 ## Events
 

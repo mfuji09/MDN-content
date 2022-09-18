@@ -11,9 +11,10 @@ tags:
   - pointer lock
 browser-compat: api.Element.requestPointerLock
 ---
+
 {{DefaultAPISidebar("Pointer Lock API")}}
 
-The **Pointer Lock API** (formerly called _Mouse Lock API_) provides input methods based on the movement of the mouse over time (i.e., deltas), not just the absolute position of the mouse cursor in the viewport. It gives you access to raw mouse movement, locks the target of mouse events to a single element, eliminates limits on how far mouse movement can go in a single direction, and removes the cursor from view. It is ideal for first person 3D games, for example.
+The **Pointer Lock API** (formerly called _Mouse Lock API_) provides input methods based on the movement of the mouse over time (i.e., deltas), not just the absolute position of the mouse cursor in the viewport. It gives you access to raw mouse movement, locks the target of mouse events to a single element, eliminates limits on how far mouse movement can go in a single direction, and removes the cursor from view. It is ideal for first-person 3D games, for example.
 
 More than that, the API is useful for any applications that require significant mouse input to control movements, rotate objects, and change entries, for example allowing users to control the viewing angle by moving the mouse around without any button clicking. The buttons are then freed up for other actions. Other examples include apps for viewing maps or satellite imagery.
 
@@ -62,7 +63,7 @@ if (document.pointerLockElement === canvas ||
 }
 ```
 
-The {{domxref("Document.exitPointerLock()")}} method is used to exit pointer lock, and like {{domxref("Element.requestPointerLock","requestPointerLock")}}, works asynchronously using the {{domxref("Document/pointerlockchange_event", "pointerlockchange")}} and {{domxref("Document/pointerlockerror_event", "pointerlockerror")}} events, which you'll see more about below.
+The {{domxref("Document.exitPointerLock()")}} method is used to exit pointer lock, and like {{domxref("Element.requestPointerLock","requestPointerLock")}}, works asynchronously using the {{domxref("Element/pointerlockchange_event", "pointerlockchange")}} and {{domxref("Element/pointerlockerror_event", "pointerlockerror")}} events, which you'll see more about below.
 
 ```js
 document.exitPointerLock = document.exitPointerLock    ||
@@ -74,7 +75,7 @@ document.exitPointerLock();
 
 ## pointerlockchange event
 
-When the Pointer lock state changes—for example, when calling {{domxref("Element.requestPointerLock","requestPointerLock()")}}, {{domxref("Document.exitPointerLock","exitPointerLock()")}}, the user pressing the ESC key, etc.—the {{domxref("Document/pointerlockchange_event", "pointerlockchange")}} event is dispatched to the `document`. This is a simple event and contains no extra data.
+When the Pointer lock state changes—for example, when calling {{domxref("Element.requestPointerLock","requestPointerLock()")}}, {{domxref("Document.exitPointerLock","exitPointerLock()")}}, the user pressing the ESC key, etc.—the {{domxref("Element/pointerlockchange_event", "pointerlockchange")}} event is dispatched to the `document`. This is a simple event and contains no extra data.
 
 ```js
 if ("onpointerlockchange" in document) {
@@ -97,7 +98,7 @@ function lockChangeAlert() {
 
 ## pointerlockerror event
 
-When there is an error caused by calling {{domxref("Element.requestPointerLock","requestPointerLock()")}} or {{domxref("Document.exitPointerLock","exitPointerLock()")}}, the {{domxref("Document/pointerlockerror_event", "pointerlockerror")}} event is dispatched to the `document`. This is a simple event and contains no extra data.
+When there is an error caused by calling {{domxref("Element.requestPointerLock","requestPointerLock()")}} or {{domxref("Document.exitPointerLock","exitPointerLock()")}}, the {{domxref("Element/pointerlockerror_event", "pointerlockerror")}} event is dispatched to the `document`. This is a simple event and contains no extra data.
 
 ```js
 document.addEventListener('pointerlockerror', lockError, false);

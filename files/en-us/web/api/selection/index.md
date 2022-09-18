@@ -9,6 +9,7 @@ tags:
   - Selection
 browser-compat: api.Selection
 ---
+
 {{ApiRef("Selection API")}}
 
 A **`Selection`** object represents the range of text selected by the user or the current position of the caret. To obtain a `Selection` object for examination or manipulation, call {{DOMxRef("window.getSelection()")}}.
@@ -161,6 +162,6 @@ Other key terms used in this section.
 ## See also
 
 - {{DOMxRef("Window.getSelection")}}, {{DOMxRef("Document.getSelection")}}, {{DOMxRef("Range")}}
-- Selection-related events: {{domxref("Document/selectionchange_event", "selectionchange")}} and {{domxref("Document/selectstart_event", "selectstart")}}
+- Selection-related events: {{domxref("Document/selectionchange_event", "selectionchange")}} and {{domxref("Node/selectstart_event", "selectstart")}}
 - HTML inputs provide simpler helper APIs for working with selection (see {{DOMxRef("HTMLInputElement.setSelectionRange()")}})
 - {{DOMxRef("Document.activeElement")}}, {{DOMxRef("HTMLElement.focus")}}, and {{DOMxRef("HTMLElement.blur")}}

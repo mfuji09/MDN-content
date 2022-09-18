@@ -9,7 +9,7 @@ tags:
 
 {{jsSidebar}}
 
-JavaScript is a multi-paradigm, dynamic language with types and operators, standard built-in objects, and methods. Its syntax is based on the Java and C languages — many structures from those languages apply to JavaScript as well. JavaScript supports object-oriented programming with object prototypes and classes. It also supports functional programming since functions can be easily created via expressions and passed around like any other object.
+JavaScript is a multi-paradigm, dynamic language with types and operators, standard built-in objects, and methods. Its syntax is based on the Java and C languages — many structures from those languages apply to JavaScript as well. JavaScript supports object-oriented programming with [object prototypes](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) and classes. It also supports functional programming since functions are [first-class](/en-US/docs/Glossary/First-class_Function) that can be easily created via expressions and passed around like any other object.
 
 This page serves as a quick overview of various JavaScript language features, written for readers with background in other languages, such as C or Java.
 
@@ -251,7 +251,7 @@ The double-equals and triple-equals also have their inequality counterparts: `!=
 JavaScript also has [bitwise operators](/en-US/docs/Web/JavaScript/Reference/Operators#bitwise_shift_operators) and [logical operators](/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators). Notably, logical operators don't work with boolean values only — they work by the "truthiness" of the value.
 
 ```js
-const a = 0 && "Hello"; // "Hello" because 0 is "falsy"
+const a = 0 && "Hello"; // 0 because 0 is "falsy"
 const b = "Hello" || "world"; // "Hello" because both "Hello" and "world" are "truthy"
 ```
 
@@ -585,7 +585,7 @@ function avg(firstValue, secondValue, thirdValue = 0) {
   return (firstValue + secondValue + thirdValue) / 3;
 }
 
-avg(1, 2); // 1.5, instead of NaN
+avg(1, 2); // 1, instead of NaN
 ```
 
 ### Anonymous functions
@@ -761,7 +761,7 @@ fs.readFile(filename, (err, content) => {
     throw err;
   }
   console.log(content);
-}));
+});
 // Code here will be executed while the file is waiting to be read
 
 // Promise-based
@@ -771,7 +771,7 @@ fs.readFile(filename)
     console.log(content);
   }).catch((err) => {
     throw err;
-  }));
+  });
 // Code here will be executed while the file is waiting to be read
 
 // Async/await

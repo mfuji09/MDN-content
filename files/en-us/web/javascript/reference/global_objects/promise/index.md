@@ -53,7 +53,7 @@ This promise is already _resolved_ at the time when it's created (because the `r
 
 ### Chained Promises
 
-The methods `{{jsxref("Promise.prototype.then()")}}`, `{{jsxref("Promise.prototype.catch()")}}`, and `{{jsxref("Promise.prototype.finally()")}}` are used to associate further action with a promise that becomes settled. As the `{{JSxRef("Promise.then", "Promise.prototype.then()")}}` and `{{JSxRef("Promise.catch", "Promise.prototype.catch()")}}` methods return promises, they can be chained.
+The methods `{{jsxref("Promise.prototype.then()")}}`, `{{jsxref("Promise.prototype.catch()")}}`, and `{{jsxref("Promise.prototype.finally()")}}` are used to associate further action with a promise that becomes settled. As the `{{JSxRef("Promise/then", "Promise.prototype.then()")}}` and `{{JSxRef("Promise/catch", "Promise.prototype.catch()")}}` methods return promises, they can be chained.
 
 The `.then()` method takes up to two arguments; the first argument is a callback function for the fulfilled case of the promise, and the second argument is a callback function for the rejected case. Each `.then()` returns a newly generated promise object, which can optionally be used for chaining; for example:
 
@@ -212,11 +212,15 @@ If we change this so that the `<iframe>` in the document is listening to post me
 <!-- x.html -->
 <!DOCTYPE html>
 <script>
-  window.addEventListener("message", (event) => {
-    document.querySelector("#text").textContent = "hello";
-    // this code will only run in browsers that track the incumbent settings object
-    console.log(event);
-  }, false);
+  window.addEventListener(
+    "message",
+    (event) => {
+      document.querySelector("#text").textContent = "hello";
+      // this code will only run in browsers that track the incumbent settings object
+      console.log(event);
+    },
+    false
+  );
 </script>
 ```
 
