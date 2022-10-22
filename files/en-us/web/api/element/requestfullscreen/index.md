@@ -18,6 +18,7 @@ tags:
   - screen
 browser-compat: api.Element.requestFullscreen
 ---
+
 {{APIRef("Fullscreen API")}}
 
 The **`Element.requestFullscreen()`**
@@ -31,12 +32,9 @@ it's now in full screen mode. If permission is denied, the promise is rejected a
 element receives a {{domxref("Element/fullscreenerror_event", "fullscreenerror")}} event instead. If the element has been
 detached from the original document, then the document receives these events instead.
 
-> **Note:** This method must be called while responding to a user
-> interaction or a device orientation change; otherwise it will fail.
-
 ## Syntax
 
-```js
+```js-nolint
 requestFullscreen()
 requestFullscreen(options)
 ```
@@ -82,6 +80,10 @@ returned. The rejection handler receives one of the following exception values:_
       either because of Feature Policy configuration or other access control features.
     - The element and its document are the same node.
 
+## Security
+
+[Transient user activation](/en-US/docs/Web/Security/User_activation) is required. The user has to interact with the page or a UI element in order for this feature to work.
+
 ## Usage notes
 
 ### Compatible elements
@@ -123,7 +125,7 @@ function toggleFullscreen() {
   let elem = document.querySelector("video");
 
   if (!document.fullscreenElement) {
-    elem.requestFullscreen().catch(err => {
+    elem.requestFullscreen().catch((err) => {
       alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
     });
   } else {
@@ -153,7 +155,7 @@ In this example, the entire document is placed into fullscreen mode by calling
 ```js
 let elem = document.documentElement;
 
-elem.requestFullscreen({ navigationUI: "show" }).then(() => {}).catch(err => {
+elem.requestFullscreen({ navigationUI: "show" }).then(() => {}).catch((err) => {
   alert(`An error occurred while trying to switch into fullscreen mode: ${err.message} (${err.name})`);
 });
 ```

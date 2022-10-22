@@ -9,6 +9,7 @@ tags:
   - touch
 browser-compat: api.Touch.force
 ---
+
 {{ APIRef("Touch Events") }}
 
 The **`Touch.force`** read-only property returns the amount of
@@ -36,14 +37,14 @@ the `targetTouches` list and logs the `force` value of each touch
 point but the code could invoke different processing depending on the value.
 
 ```js
-someElement.addEventListener('touchstart', function(e) {
+someElement.addEventListener('touchstart', (e) => {
    // Iterate through the list of touch points and log each touch
    // point's force.
-   for (var i=0; i < e.targetTouches.length; i++) {
+   for (let i = 0; i < e.targetTouches.length; i++) {
      // Add code to "switch" based on the force value. For example
      // minimum pressure vs. maximum pressure could result in
      // different handling of the user's input.
-     console.log("targetTouches[" + i + "].force = " + e.targetTouches[i].force);
+     console.log(`targetTouches[${i}].force = ${e.targetTouches[i].force}`);
    }
 }, false);
 ```

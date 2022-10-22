@@ -28,11 +28,11 @@ which will be transmitted to the other peer.>
 
 ## Syntax
 
-```js
+```js-nolint
 addTrack(track)
 addTrack(track, stream0)
 addTrack(track, stream0, stream1)
-addTrack(track, stream0, stream1, /* ... ,*/ streamN)
+addTrack(track, stream0, stream1, /* … ,*/ streamN)
 ```
 
 ### Parameters
@@ -40,7 +40,7 @@ addTrack(track, stream0, stream1, /* ... ,*/ streamN)
 - `track`
   - : A {{domxref("MediaStreamTrack")}} object representing the media track to add to the
     peer connection.
-- `stream0, ..., streamN` {{optional_inline}}
+- `stream0, …, streamN` {{optional_inline}}
   - : One or more local {{domxref("MediaStream")}} objects to which the track should be
     added.
 
@@ -235,18 +235,16 @@ This example is drawn from the code presented in the article [Signaling and vide
 is received from the remote peer.
 
 ```js
-var mediaConstraints = {
+const mediaConstraints = {
   audio: true, // We want an audio track
-  video: true, // ...and we want a video track
+  video: true, // And we want a video track
 };
 
-var desc = new RTCSessionDescription(sdp);
+const desc = new RTCSessionDescription(sdp);
 
 pc.setRemoteDescription(desc)
-  .then(function () {
-    return navigator.mediaDevices.getUserMedia(mediaConstraints);
-  })
-  .then(function (stream) {
+  .then(() => navigator.mediaDevices.getUserMedia(mediaConstraints))
+  .then((stream) => {
     previewElement.srcObject = stream;
 
     stream.getTracks().forEach((track) => pc.addTrack(track, stream));

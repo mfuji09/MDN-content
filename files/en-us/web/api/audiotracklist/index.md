@@ -15,6 +15,7 @@ tags:
   - list
 browser-compat: api.AudioTrackList
 ---
+
 {{APIRef("HTML DOM")}}
 
 The **`AudioTrackList`** interface is used to represent a list of the audio tracks contained within a given HTML media element, with each track represented by a separate {{domxref("AudioTrack")}} object in the list.
@@ -23,14 +24,14 @@ Retrieve an instance of this object with {{domxref('HTMLMediaElement.audioTracks
 
 {{InheritanceDiagram}}
 
-## Properties
+## Instance properties
 
 _This interface also inherits properties from its parent interface, {{domxref("EventTarget")}}._
 
 - {{domxref("AudioTrackList.length", "length")}} {{ReadOnlyInline}}
   - : The number of tracks in the list.
 
-## Methods
+## Instance methods
 
 _This interface also inherits methods from its parent interface, {{domxref("EventTarget")}}._
 
@@ -57,7 +58,7 @@ In addition to being able to obtain direct access to the audio tracks present on
 To get a media element's {{domxref("AudioTrackList")}}, use its {{domxref("HTMLMediaElement.audioTracks", "audioTracks")}} property.
 
 ```js
-var audioTracks = document.querySelector("video").audioTracks;
+const audioTracks = document.querySelector("video").audioTracks;
 ```
 
 ### Monitoring track count changes
