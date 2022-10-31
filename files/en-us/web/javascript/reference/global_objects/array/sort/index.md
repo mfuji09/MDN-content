@@ -64,7 +64,7 @@ The `sort()` method preserves empty slots. If the source array is [sparse](/en-U
 
 > **Note:** In UTF-16, Unicode characters above `\uFFFF` are
 > encoded as two surrogate code units, of the range
-> `\uD800`-`\uDFFF`. The value of each code unit is taken
+> `\uD800` - `\uDFFF`. The value of each code unit is taken
 > separately into account for the comparison. Thus the character formed by the surrogate
 > pair `\uD855\uDE51` will be sorted before the character
 > `\uFF3A`.
@@ -117,7 +117,7 @@ function compareNumbers(a, b) {
 }
 ```
 
-The `reverse()` method is [generic](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#generic_array_methods). It only expects the `this` value to have a `length` property and integer-keyed properties. Although strings are also array-like, this method is not suitable to be applied on them, as strings are immutable.
+The `sort()` method is [generic](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#generic_array_methods). It only expects the `this` value to have a `length` property and integer-keyed properties. Although strings are also array-like, this method is not suitable to be applied on them, as strings are immutable.
 
 ## Examples
 
