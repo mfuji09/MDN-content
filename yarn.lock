@@ -39,10 +39,10 @@
   resolved "https://registry.yarnpkg.com/@mdn/browser-compat-data/-/browser-compat-data-5.2.20.tgz#feebfdc8420d3744a2f5df3afac6ea7843ea27d1"
   integrity sha512-8FIjbB+NcHzU6Uk+8Kqpio8gkjrOROxYczwybI/fKI+Vr4d0pymm2hh+F/lTIAk3NWfyDCyNwldhzj/GAYutdg==
 
-"@mdn/yari@1.27.8":
-  version "1.27.8"
-  resolved "https://registry.yarnpkg.com/@mdn/yari/-/yari-1.27.8.tgz#4785b7d2a135c6bde4d01ae1107df203170bdc71"
-  integrity sha512-gZvg0SJ/EKEgf95RQnpMDB5poGKpE5Z/WZKvPKaeJZRkW2WO+V0O47Y7u9BQOLShL30qauD1rgLZ0yAoqXjudQ==
+"@mdn/yari@1.27.23":
+  version "1.27.23"
+  resolved "https://registry.yarnpkg.com/@mdn/yari/-/yari-1.27.23.tgz#0abc4a9ba84fa5ef66c08ae9fcd1590ad959f132"
+  integrity sha512-II3wB1/5IlxYtuQb0sy1Gp3tCGlC1uxfRy33hN9InWNZsapm3+HlOq3hjGUmyrUv8np3kc+QxUV1rYRa4/dbEA==
   dependencies:
     "@caporal/core" "^2.0.2"
     "@fast-csv/parse" "^4.3.6"
@@ -51,7 +51,7 @@
     "@use-it/interval" "^1.0.0"
     "@webref/css" "^5.4.4"
     accept-language-parser "^1.5.0"
-    browser-specs "^3.33.0"
+    browser-specs "^3.34.0"
     chalk "^4.1.2"
     cheerio "^1.0.0-rc.12"
     cli-progress "^3.11.2"
@@ -59,7 +59,7 @@
     cookie "^0.5.0"
     cookie-parser "^1.4.6"
     css-tree "^2.3.0"
-    dayjs "^1.11.6"
+    dayjs "^1.11.7"
     dexie "^3.2.2"
     dotenv "^16.0.3"
     ejs "^3.1.8"
@@ -602,10 +602,10 @@ braces@^3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-browser-specs@^3.33.0:
-  version "3.33.0"
-  resolved "https://registry.yarnpkg.com/browser-specs/-/browser-specs-3.33.0.tgz#c295ebdf834b30c45a5a41594a6ff295339d17ed"
-  integrity sha512-GZQytfKC3ebFHJf312PdCHqEB94ElzntJvEYQsaabTm0Qx5rPeVWqPJIuAR9lrCtbhxO52PQYMKuIbZyry+Qzg==
+browser-specs@^3.34.0:
+  version "3.34.0"
+  resolved "https://registry.yarnpkg.com/browser-specs/-/browser-specs-3.34.0.tgz#abc546a8254bbf9d640f99eaaf73bc23c2e151eb"
+  integrity sha512-C6YQxP21plYQpdnQS4gMQDMNMJ77LLS/42WflwzIyX7clUk4BQqMBL2wwO2IQiujNsi2ZnbSanymreWQM2IJ1Q==
 
 buffer-alloc-unsafe@^1.1.0:
   version "1.1.0"
@@ -1164,10 +1164,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-dayjs@^1.11.6:
-  version "1.11.6"
-  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.6.tgz#2e79a226314ec3ec904e3ee1dd5a4f5e5b1c7afb"
-  integrity sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ==
+dayjs@^1.11.7:
+  version "1.11.7"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.7.tgz#4b296922642f70999544d1144a2c25730fce63e2"
+  integrity sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==
 
 debug@2.6.9:
   version "2.6.9"
