@@ -2312,10 +2312,6 @@
       "inh": "",
       "impl": []
     },
-    "PaymentInstruments": {
-      "inh": "",
-      "impl": []
-    },
     "PaymentManager": {
       "inh": "",
       "impl": []
@@ -4018,6 +4014,10 @@
     },
     "XRMediaBinding": {
       "inh": "",
+      "impl": []
+    },
+    "XRPermissionStatus": {
+      "inh": "PermissionStatus",
       "impl": []
     },
     "XRPose": {
