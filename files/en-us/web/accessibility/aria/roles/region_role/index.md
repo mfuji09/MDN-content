@@ -1,6 +1,7 @@
 ---
 title: "ARIA: region role"
 slug: Web/Accessibility/ARIA/Roles/region_role
+page-type: aria-role
 spec-urls:
   - https://w3c.github.io/aria/#region
   - https://w3c.github.io/aria-practices/#aria_lh_region
@@ -79,7 +80,7 @@ If there is a content area with `tabindex="0"`, add `role="region"` to convey to
 
 ### SVG
 
-`role="region"` can be declared on areas of {{HTMLElement('svg')}} along with an `aria-label` to allow individual sections of the SVG to be described.
+`role="region"` can be declared on areas of {{SVGElement('svg')}} along with an `aria-label` to allow individual sections of the SVG to be described.
 
 ## Specifications
 
