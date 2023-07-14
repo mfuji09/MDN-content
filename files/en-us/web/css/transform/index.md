@@ -16,7 +16,7 @@ If the property has a value different than `none`, a [stacking context](/en-US/d
 In that case, the element will act as a [containing block](/en-US/docs/Web/CSS/Containing_block) for any `position: fixed;` or `position: absolute;` elements that it contains.
 
 > **Warning:** Only transformable elements can be `transform`ed.
-> That is, all elements whose layout is governed by the CSS box model except for: [non-replaced inline boxes](/en-US/docs/Web/CSS/Visual_formatting_model#inline-level_elements_and_inline_boxes), [table-column boxes](/en-US/docs/Web/HTML/Element/col), and [table-column-group boxes](/en-US/docs/Web/HTML/Element/colgroup).
+> That is, all elements whose layout is governed by the CSS box model except for: [non-replaced inline boxes](/en-US/docs/Glossary/Inline-level_content), [table-column boxes](/en-US/docs/Web/HTML/Element/col), and [table-column-group boxes](/en-US/docs/Web/HTML/Element/colgroup).
 
 ## Syntax
 
@@ -76,7 +76,7 @@ If {{cssxref("transform-function/perspective", "perspective()")}} is one of mult
 Scaling/zooming animations are problematic for accessibility, as they are a common trigger for certain types of migraine.
 If you need to include such animations on your website, you should provide a control to allow users to turn off animations, preferably site-wide.
 
-Also, consider making use of the {{cssxref("@media/prefers-reduced-motion", "prefers-reduced-motion")}} media feature — use it to write a [media query](/en-US/docs/Web/CSS/Media_Queries) that will turn off animations if the user has reduced animation specified in their system preferences.
+Also, consider making use of the {{cssxref("@media/prefers-reduced-motion", "prefers-reduced-motion")}} media feature — use it to write a [media query](/en-US/docs/Web/CSS/CSS_media_queries) that will turn off animations if the user has reduced animation specified in their system preferences.
 
 Find out more:
 
