@@ -3413,7 +3413,7 @@ The values below are derived in part from a number of consumer electronics techn
     </tr>
     <tr>
       <td><code>"Lock"</code></td>
-      <td>Locks or unlocks the currently selected content or pgoram.</td>
+      <td>Locks or unlocks the currently selected content or program.</td>
       <td><code>VK_LOCK</code></td>
       <td></td>
       <td></td>
