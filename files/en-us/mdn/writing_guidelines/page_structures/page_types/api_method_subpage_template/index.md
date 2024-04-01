@@ -18,7 +18,7 @@ browser-compat: path.to.feature.NameOfTheMethod
 >
 > ```md
 > ---
-> title: NameOfTheParentInterface.NameOfTheMethod()
+> title: "NameOfTheParentInterface: NameOfTheMethod() method"
 > slug: Web/API/NameOfTheParentInterface/NameOfTheMethod
 > page-type: web-api-instance-method OR web-api-static-method
 > status:
@@ -32,7 +32,7 @@ browser-compat: path.to.feature.NameOfTheMethod
 > - **title**
 >   - : Title heading displayed at the top of the page.
 >     Format as `"NameOfTheParentInterface: NameOfTheMethod() method"`.
->     For example, the [count()](/en-US/docs/Web/API/IDBIndex/count) method of the [IDBIndex](/en-US/docs/Web/API/IDBIndex) interface has a _title_ of `IDBIndex: count() method`.
+>     For example, the [count()](/en-US/docs/Web/API/IDBIndex/count) method of the [IDBIndex](/en-US/docs/Web/API/IDBIndex) interface has a _title_ of `"IDBIndex: count() method"`.
 > - **slug**
 >
 >   - : The end of the URL path after `https://developer.mozilla.org/en-US/docs/`.
