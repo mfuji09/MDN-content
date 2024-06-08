@@ -38,6 +38,8 @@ This article provides information about the changes in Firefox 127 that affect d
 
 ### SVG
 
+- The [`lh` and `rlh`](/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#line_height_units) line height units, first supported in CSS [in Firefox 120](/en-US/docs/Mozilla/Firefox/Releases/120#css), are now supported in SVG as well. They can be used both in CSS property values `stroke-width: 0.5lh` and SVG attributes values `stroke-width="0.5lh"`. ([Firefox bug 1892089](https://bugzil.la/1892089)).
+
 #### Removals
 
 ### HTTP
@@ -66,9 +68,20 @@ This article provides information about the changes in Firefox 127 that affect d
 
 #### General
 
+- Fixed support for `wheel` actions in both WebDriver classic and BiDi to correctly handle modifiers such as `ctrl`, `shift`, etc. ([Firefox bug 1885542](https://bugzil.la/1885542)).
+
 #### WebDriver BiDi
 
+- Added the `permissions.setPermission` command which allows to update browser permissions (such as `geolocation`). The permissions module is an extension to the WebDriver BiDi specification [defined in the Permissions specification](https://www.w3.org/TR/permissions/#webdriver-bidi-module-permissions) ([Firefox bug 1875065](https://bugzil.la/1875065)).
+- Added support for a11y attributes `name` and `role` as locators for the `browsingContext.locateNodes` command ([Firefox bug 1885577](https://bugzil.la/1885577)).
+- Added support for the `devicePixelRatio` argument to `browsingContext.setViewport` which allows to emulate the behavior of the screens with different device pixel ratio ([Firefox bug 1857961](https://bugzil.la/1857961)).
+- Improved `browsingContext.navigate` to avoid race conditions leading to wait unnecessarily before resolving the command ([Firefox bug 1894305](https://bugzil.la/1894305)).
+
 #### Marionette
+
+- Fixed `WebDriver:ElementClear` for elements located in a disabled fieldset ([Firefox bug 1863266](https://bugzil.la/1863266)).
+- Fixed a bug where `WebDriver:GetElementText` failed to correctly capitalize text containing an underscore ([Firefox bug 1888004](https://bugzil.la/1888004)).
+- Fixed a bug in `WebDriver:SwitchToFrame` which could fail if the tab was in the middle of a navigation ([Firefox bug 1817820](https://bugzil.la/1817820)).
 
 ## Changes for add-on developers
 
@@ -82,6 +95,10 @@ This article provides information about the changes in Firefox 127 that affect d
 ## Experimental web features
 
 These features are newly shipped in Firefox 127 but are disabled by default. To experiment with them, search for the appropriate preference on the `about:config` page and set it to `true`. You can find more such features on the [Experimental features](/en-US/docs/Mozilla/Firefox/Experimental_features) page.
+
+- **Symmetrical spacing with CSS `letter-spacing`:** `layout.css.letter-spacing.model`.
+
+  The CSS `letter-spacing` property now splits the specified letter spacing evenly on both sides of each character. This is unlike the current behavior where spacing is added primarily to one side. [Firefox bug 1891446](https://bugzil.la/1891446).
 
 ## Older versions
 
