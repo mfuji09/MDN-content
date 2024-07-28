@@ -57,7 +57,8 @@ _`Element` inherits properties from its parent interface, {{DOMxRef("Node")}}, a
 
   - : The namespace URI of the element, or `null` if it is no namespace.
 
-    > **Note:** In Firefox 3.5 and earlier, HTML elements are in no namespace. In later versions, HTML elements are in the [`http://www.w3.org/1999/xhtml`](https://www.w3.org/1999/xhtml/) namespace in both HTML and XML trees.
+    > [!NOTE]
+    > In Firefox 3.5 and earlier, HTML elements are in no namespace. In later versions, HTML elements are in the [`http://www.w3.org/1999/xhtml`](https://www.w3.org/1999/xhtml/) namespace in both HTML and XML trees.
 
 - {{DOMxRef("Element.nextElementSibling")}} {{ReadOnlyInline}}
   - : An `Element`, the element immediately following the given one in the tree, or `null` if there's no sibling node.
@@ -244,7 +245,7 @@ _`Element` inherits methods from its parents {{DOMxRef("Node")}}, and its own pa
 - {{DOMxRef("Element.querySelectorAll()")}}
   - : Returns a {{DOMxRef("NodeList")}} of nodes which match the specified selector string relative to the element.
 - {{DOMxRef("Element.releasePointerCapture()")}}
-  - : Releases (stops) pointer capture that was previously set for a specific {{DOMxRef("PointerEvent","pointer event")}}.
+  - : Releases (stops) pointer capture that was previously set for a specific {{DOMxRef("PointerEvent")}}.
 - {{DOMxRef("Element.remove()")}}
   - : Removes the element from the children list of its parent.
 - {{DOMxRef("Element.removeAttribute()")}}
