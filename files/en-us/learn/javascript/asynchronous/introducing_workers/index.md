@@ -13,7 +13,7 @@ In this final article in our "Asynchronous JavaScript" module, we'll introduce _
     <tr>
       <th scope="row">Prerequisites:</th>
       <td>
-        Basic computer literacy, a reasonable understanding of JavaScript
+        A reasonable understanding of JavaScript
         fundamentals, including event handling.
       </td>
     </tr>
@@ -77,9 +77,8 @@ function generatePrimes(quota) {
 document.querySelector("#generate").addEventListener("click", () => {
   const quota = document.querySelector("#quota").value;
   const primes = generatePrimes(quota);
-  document.querySelector(
-    "#output",
-  ).textContent = `Finished generating ${quota} primes!`;
+  document.querySelector("#output").textContent =
+    `Finished generating ${quota} primes!`;
 });
 
 document.querySelector("#reload").addEventListener("click", () => {
@@ -93,7 +92,7 @@ In this program, after we call `generatePrimes()`, the program becomes totally u
 
 ### Prime generation with a worker
 
-For this example, start by making a local copy of the files at <https://github.com/mdn/learning-area/blob/main/javascript/asynchronous/workers/start>. There are four files in this directory:
+For this example, start by making a local copy of the files at <https://github.com/mdn/learning-area/tree/main/javascript/asynchronous/workers/start>. There are four files in this directory:
 
 - index.html
 - style.css
@@ -161,9 +160,8 @@ document.querySelector("#generate").addEventListener("click", () => {
 // update the output box with a message for the user, including the number of
 // primes that were generated, taken from the message data.
 worker.addEventListener("message", (message) => {
-  document.querySelector(
-    "#output",
-  ).textContent = `Finished generating ${message.data} primes!`;
+  document.querySelector("#output").textContent =
+    `Finished generating ${message.data} primes!`;
 });
 
 document.querySelector("#reload").addEventListener("click", () => {
@@ -228,9 +226,10 @@ The first thing the worker does is start listening for messages from the main sc
 
 The `generatePrimes()` function is just like the synchronous version, except instead of returning a value, we send a message to the main script when we are done. We use the {{domxref("DedicatedWorkerGlobalScope/postMessage", "postMessage()")}} function for this, which like `addEventListener()` is a global function in a worker. As we already saw, the main script is listening for this message and will update the DOM when the message is received.
 
-> **Note:** To run this site, you'll have to run a local web server, because file:// URLs are not allowed to load workers. See our guide to [setting up a local testing server](/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server). With that done, you should be able to click "Generate primes" and have your main page stay responsive.
+> [!NOTE]
+> To run this site, you'll have to run a local web server, because file:// URLs are not allowed to load workers. See our guide to [setting up a local testing server](/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server). With that done, you should be able to click "Generate primes" and have your main page stay responsive.
 >
-> If you have any problems creating or running the example, you can review the [finished version](https://github.com/mdn/learning-area/blob/main/javascript/asynchronous/workers/finished) and try it [live](https://mdn.github.io/learning-area/javascript/asynchronous/workers/finished).
+> If you have any problems creating or running the example, you can review the [finished version](https://github.com/mdn/learning-area/tree/main/javascript/asynchronous/workers/finished) and try it [live](https://mdn.github.io/learning-area/javascript/asynchronous/workers/finished/).
 
 ## Other types of workers
 

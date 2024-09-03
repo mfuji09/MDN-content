@@ -61,7 +61,7 @@ The new {{DOMxRef("Element")}}.
 ## Examples
 
 This creates a new `<div>` element in the {{Glossary("XHTML")}} namespace and
-appends it to the vbox element. Although this is not an extremely useful [XUL](/en-US/docs/Mozilla/Tech/XUL) document, it does demonstrate the use of
+appends it to the vbox element. Although this is not an extremely useful XUL document, it does demonstrate the use of
 elements from two different namespaces within a single document:
 
 ```xml
@@ -95,7 +95,8 @@ elements from two different namespaces within a single document:
 </page>
 ```
 
-> **Note:** The example given above uses inline script which is not recommended in XHTML
+> [!NOTE]
+> The example given above uses inline script which is not recommended in XHTML
 > documents. This particular example is actually an XUL document with embedded XHTML,
 > however, the recommendation still applies.
 

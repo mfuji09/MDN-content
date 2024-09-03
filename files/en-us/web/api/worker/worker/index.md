@@ -6,11 +6,12 @@ page-type: web-api-constructor
 browser-compat: api.Worker.Worker
 ---
 
-{{APIRef("Web Workers API")}}
+{{APIRef("Web Workers API")}}{{AvailableInWorkers("window_and_worker_except_service")}}
 
 The **`Worker()`** constructor creates a {{domxref("Worker")}} object that executes the script at the specified URL. This script must obey the [same-origin policy](/en-US/docs/Web/Security/Same-origin_policy).
 
-> **Note:** that there is a disagreement among browser manufacturers about whether a data URL is of the same origin or not. Though Firefox 10 and later accept data URLs, that's not the case in all other browsers.
+> [!NOTE]
+> There is a disagreement among browser manufacturers about whether a data URL is of the same origin or not. Though Firefox 10 and later accept data URLs, that's not the case in all other browsers.
 
 ## Syntax
 
@@ -30,7 +31,7 @@ new Worker(aURL, options)
     - `type`
       - : A string specifying the type of worker to create. The value can be `classic` or `module`. If not specified, the default used is `classic`.
     - `credentials`
-      - : A string specifying the type of credentials to use for the worker. The value can be `omit`, `same-origin`, or _`include`. If not specified, or if type is `classic`, the default used is `omit` (no credentials required)._
+      - : A string specifying the type of credentials to use for the worker. The value can be `omit`, `same-origin`, or _`include`. If not specified, or if type is `classic`, the default used is `same-origin` (only include credentials for same-origin requests)._
     - `name`
       - : A string specifying an identifying name for the {{domxref("DedicatedWorkerGlobalScope")}} representing the scope of the worker, which is mainly useful for debugging purposes.
 
@@ -50,9 +51,10 @@ The following code snippet shows creation of a {{domxref("Worker")}} object usin
 
 ```js
 const myWorker = new Worker("worker.js");
+const first = document.querySelector("input#number1");
 
 first.onchange = () => {
-  myWorker.postMessage([first.value, second.value]);
+  myWorker.postMessage(first.value);
   console.log("Message posted to worker");
 };
 ```

@@ -132,7 +132,7 @@ const a = { x: 1, x: 2 };
 console.log(a); // {x: 2}
 ```
 
-After ES2015, duplicate property names are allowed everywhere, including [strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode#duplicate_property_names). You can also have duplicate property names in [classes](/en-US/docs/Web/JavaScript/Reference/Classes). The only exception is [private properties](/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields), which must be unique in the class body.
+After ES2015, duplicate property names are allowed everywhere, including [strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode#duplicate_property_names). You can also have duplicate property names in [classes](/en-US/docs/Web/JavaScript/Reference/Classes). The only exception is [private properties](/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties), which must be unique in the class body.
 
 ### Method definitions
 
@@ -229,7 +229,8 @@ const mergedObj = { ...obj1, ...obj2 };
 // { foo: "baz", x: 42, y: 13 }
 ```
 
-> **Warning:** Note that {{jsxref("Object.assign()")}} triggers [setters](/en-US/docs/Web/JavaScript/Reference/Functions/set), whereas the spread syntax doesn't!
+> [!WARNING]
+> Note that {{jsxref("Object.assign()")}} triggers [setters](/en-US/docs/Web/JavaScript/Reference/Functions/set), whereas the spread syntax doesn't!
 
 ### Prototype setter
 

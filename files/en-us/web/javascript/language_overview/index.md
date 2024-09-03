@@ -804,7 +804,7 @@ Unlike Haskell, Python, Java, etc., JavaScript module resolution is entirely hos
 
 However, the JavaScript language doesn't offer standard library modules — all core functionalities are powered by global variables like [`Math`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) and [`Intl`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) instead. This is due to the long history of JavaScript lacking a module system, and the fact that opting into the module system involves some changes to the runtime setup.
 
-Different runtimes may use different module systems. For example, [Node.js](https://nodejs.org/en/) uses the package manager [npm](https://www.npmjs.com/) and is mostly file-system based, while [Deno](https://deno.land/) and browsers are fully URL-based and modules can be resolved from HTTP URLs.
+Different runtimes may use different module systems. For example, [Node.js](https://nodejs.org/en/) uses the package manager [npm](https://www.npmjs.com/) and is mostly file-system based, while [Deno](https://deno.com/) and browsers are fully URL-based and modules can be resolved from HTTP URLs.
 
 For more information, see the [modules guide page](/en-US/docs/Web/JavaScript/Guide/Modules).
 
@@ -812,7 +812,7 @@ For more information, see the [modules guide page](/en-US/docs/Web/JavaScript/Gu
 
 Throughout this page, we've constantly mentioned that certain features are _language-level_ while others are _runtime-level_.
 
-JavaScript is a general-purpose scripting language. The [core language specification](/en-US/docs/Web/JavaScript/JavaScript_technologies_overview#javascript_the_core_language_ecmascript) focuses on pure computational logic. It doesn't deal with any input/output — in fact, without extra runtime-level APIs (most notably [`console.log()`](/en-US/docs/Web/API/console/log)), a JavaScript program's behavior is entirely unobservable.
+JavaScript is a general-purpose scripting language. The [core language specification](/en-US/docs/Web/JavaScript/JavaScript_technologies_overview#javascript_the_core_language_ecmascript) focuses on pure computational logic. It doesn't deal with any input/output — in fact, without extra runtime-level APIs (most notably [`console.log()`](/en-US/docs/Web/API/console/log_static)), a JavaScript program's behavior is entirely unobservable.
 
 A runtime, or a host, is something that feeds data to the JavaScript engine (the interpreter), provides extra global properties, and provides hooks for the engine to interact with the outside world. Module resolution, reading data, printing messages, sending network requests, etc. are all runtime-level operations. Since its inception, JavaScript has been adopted in various environments, such as browsers (which provide APIs like [DOM](/en-US/docs/Web/API/Document_Object_Model)), Node.js (which provides APIs like [file system access](https://nodejs.org/api/fs.html)), etc. JavaScript has been successfully integrated in web (which was its primary purpose), mobile apps, desktop apps, server-side apps, serverless, embedded systems, and more. While you learn about JavaScript core features, it's also important to understand host-provided features in order to put the knowledge to use. For example, you can read about all [web platform APIs](/en-US/docs/Web/API), which are implemented by browsers, and sometimes non-browsers.
 
