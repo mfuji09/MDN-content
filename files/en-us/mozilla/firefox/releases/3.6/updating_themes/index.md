@@ -10,9 +10,9 @@ This article intends to help theme authors update Firefox-3.5-compatible themes 
 
 ## Chrome registration change
 
-[`contents.rdf` is not supported anymore](https://www.oxymoronical.com/blog/2009/06/Farewell-contentsrdf), you need to use `chrome.manifest` instead.
+[`contents.rdf` is not supported anymore](https://www.oxymoronical.com/blog/2009/06/Farewell-contentsrdf/), you need to use `chrome.manifest` instead.
 
-## Emptytext styling
+## Empty text styling
 
 XUL textboxes don't have the `empty` attribute anymore, but `isempty` instead. So instead of `textbox[empty="true"]`, you need to use `textbox[isempty="true"]`.
 

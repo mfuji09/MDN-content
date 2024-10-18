@@ -12,8 +12,7 @@ including Cross-Site Scripting ({{Glossary("Cross-site_scripting", "XSS")}}) and
 These attacks are used for everything from data theft, to site defacement, to malware distribution.
 
 CSP is designed to be fully backward compatible (except CSP version 2 where there are some explicitly-mentioned inconsistencies in backward compatibility; more details [here](https://www.w3.org/TR/CSP2/) section 1.1).
-Browsers that don't support it still work with servers that implement it, and vice versa: browsers that don't support CSP ignore it, functioning as usual, defaulting to the standard same-origin policy for web content.
-If the site doesn't offer the CSP header, browsers likewise use the standard [same-origin policy](/en-US/docs/Web/Security/Same-origin_policy).
+Browsers that don't support it still work with servers that implement it, and vice versa. Browsers that don't support CSP ignore it, functioning as usual; they will only apply the protections of the standard [same-origin policy](/en-US/docs/Web/Security/Same-origin_policy) without the further restrictions that the CSP would add.
 
 To enable CSP, you need to configure your web server to return the {{HTTPHeader("Content-Security-Policy")}} HTTP header.
 (Sometimes you may see mentions of the `X-Content-Security-Policy` header, but that's an older version and you don't need to specify it anymore.)
@@ -102,14 +101,14 @@ A website administrator wants to allow users of a web application to include ima
 but to restrict audio or video media to trusted providers, and all scripts only to a specific server that hosts trusted code.
 
 ```http
-Content-Security-Policy: default-src 'self'; img-src *; media-src example.org example.net; script-src userscripts.example.com
+Content-Security-Policy: default-src 'self'; img-src *; media-src example.org example.net; script-src userscript.example.com
 ```
 
 Here, by default, content is only permitted from the document's origin, with the following exceptions:
 
 - Images may load from anywhere (note the "\*" wildcard).
 - Media is only allowed from example.org and example.net (and not from subdomains of those sites).
-- Executable script is only allowed from userscripts.example.com.
+- Executable script is only allowed from userscript.example.com.
 
 ### Example 4
 
@@ -208,6 +207,10 @@ A typical object might look like this:
 
 You need to set up a server to receive reports with the given JSON format and content type.
 The server handling these requests can then store or process the incoming reports in a way that best suits your needs.
+
+## Specifications
+
+{{Specifications}}
 
 ## Browser compatibility
 

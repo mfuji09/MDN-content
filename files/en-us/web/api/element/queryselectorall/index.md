@@ -34,7 +34,7 @@ querySelectorAll(selectors)
 ### Return value
 
 A non-live {{domxref("NodeList")}} containing one {{domxref("Element")}} object for
-each descendant node that matches at least one of the specified selectors.
+each descendant node that matches at least one of the specified selectors. The elements are in document order — that is, parents before children, earlier siblings before later siblings.
 
 > [!NOTE]
 > If the specified `selectors` include a [CSS pseudo-element](/en-US/docs/Web/CSS/Pseudo-elements), the returned list
@@ -68,14 +68,14 @@ const refs = [
 ### Obtaining a list of matches
 
 To obtain a {{domxref("NodeList")}} of all of the {{HTMLElement("p")}} elements
-contained within the element `"myBox"`:
+contained within the element `myBox`:
 
 ```js
 const matches = myBox.querySelectorAll("p");
 ```
 
 This example returns a list of all {{HTMLElement("div")}} elements within
-`"myBox"` with a class of either "`note`" or "`alert`":
+`myBox` with a class of either `note` or `alert`:
 
 ```js
 const matches = myBox.querySelectorAll("div.note, div.alert");
@@ -98,11 +98,11 @@ const matches = document.querySelectorAll("iframe[data-src]");
 ```
 
 Here, an attribute selector is used to return a list of the list items contained within
-a list whose ID is `"userlist"` which have a `"data-active"`
+a list whose ID is `"user-list"` which have a `"data-active"`
 attribute whose value is `"1"`:
 
 ```js
-const container = document.querySelector("#userlist");
+const container = document.querySelector("#user-list");
 const matches = container.querySelectorAll("li[data-active='1']");
 ```
 

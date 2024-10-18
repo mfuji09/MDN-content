@@ -2,12 +2,10 @@
 title: <position-area>
 slug: Web/CSS/position-area_value
 page-type: css-type
-status:
-  - experimental
 browser-compat: css.properties.position-area
 ---
 
-{{CSSRef}}{{SeeCompatTable}}
+{{CSSRef}}
 
 The **`<position-area>`** [CSS](/en-US/docs/Web/CSS) [data type](/en-US/docs/Web/CSS/CSS_Types) defines the cell or spanned cells of a **position-area grid**, a 3x3 grid whose center cell is an anchor element.
 
@@ -180,11 +178,11 @@ The generic logical spanning keywords — when combined with a logical row or co
 
 - `span-start`
 
-  - : Span the center tile and the start tile of the grid row/column, with the direction refering to the writing mode of the element's containing block.
+  - : Span the center tile and the start tile of the grid row/column, with the direction referring to the writing mode of the element's containing block.
 
 - `span-end`
 
-  - : Span the center tile and the end tile of the grid row/column, with the direction refering to the writing mode of the element's containing block.
+  - : Span the center tile and the end tile of the grid row/column, with the direction referring to the writing mode of the element's containing block.
 
 - `span-self-start`
 

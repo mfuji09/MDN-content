@@ -59,7 +59,7 @@ The `placeholder` attribute is a string that provides a brief hint to the user a
 If the control's content has one directionality ({{Glossary("LTR")}} or {{Glossary("RTL")}}) but needs to present the placeholder in the opposite directionality, you can use Unicode bidirectional algorithm formatting characters to override directionality within the placeholder; see [How to use Unicode controls for bidi text](https://www.w3.org/International/questions/qa-bidi-unicode-controls) for more information.
 
 > [!NOTE]
-> Avoid using the `placeholder` attribute if you can. It is not as semantically useful as other ways to explain your form, and can cause unexpected technical issues with your content. See [`<input>` accessibility concerns](/en-US/docs/Web/HTML/Element/input#accessibility_concerns) for more information.
+> Avoid using the `placeholder` attribute if you can. It is not as semantically useful as other ways to explain your form, and can cause unexpected technical issues with your content. See [`<input>` accessibility concerns](/en-US/docs/Web/HTML/Element/input#accessibility) for more information.
 
 ### `readonly`
 
@@ -76,7 +76,7 @@ This does _not_ set a limit on how many characters the user can enter into the f
 
 ### `spellcheck`
 
-The [`spellcheck`](/en-US/docs/Web/HTML/Global_attributes#spellcheck) global attribute is used to indicate whether to enable spell-checking for an element. It can be used on any editable content, but here we consider specifics related to the use of `spellcheck` on {{HTMLElement("input")}} elements. The permitted values for `spellcheck` are:
+The [`spellcheck`](/en-US/docs/Web/HTML/Global_attributes/spellcheck) global attribute is used to indicate whether to enable spell-checking for an element. It can be used on any editable content, but here we consider specifics related to the use of `spellcheck` on {{HTMLElement("input")}} elements. The permitted values for `spellcheck` are:
 
 - `false`
   - : Disable spell-checking for this element.
